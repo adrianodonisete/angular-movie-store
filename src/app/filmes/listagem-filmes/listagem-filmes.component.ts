@@ -5,7 +5,7 @@ import { debounceTime } from 'rxjs/operators';
 
 import { FilmesService } from 'src/app/core/filmes.service';
 import { Filme } from 'src/app/shared/models/filme';
-import { ConfigPrams } from 'src/app/shared/models/config-prams';
+import { ConfigParams } from 'src/app/shared/models/config-params';
 
 @Component({
 	selector: 'dio-listagem-filmes',
@@ -15,7 +15,7 @@ import { ConfigPrams } from 'src/app/shared/models/config-prams';
 export class ListagemFilmesComponent implements OnInit {
 	readonly semFoto = 'https://www.termoparts.com.br/wp-content/uploads/2017/10/no-image.jpg';
 
-	config: ConfigPrams = {
+	config: ConfigParams = {
 		pagina: 0,
 		limite: 4,
 	};
